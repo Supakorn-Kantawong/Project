@@ -11,40 +11,93 @@
   <title>Hello, world!</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+
+<body onload="Onload()" style="background-color: cadetblue;">
+
+  <nav class="navbar navbar-expand-md navbar-dark  mb-4" style="background-color:grey; padding-top: 10px;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Top navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#" id="HOME" style="padding-left: 80px; font-size: 20px;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="MyANIME">MYANIME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#" id="MyANIME" style="padding-left: 30px; font-size: 20px;">MYANIME</a>
           </li>
         </ul>
-        <form class="d-flex">
+        <form class="d-flex" style="padding-right: 70px;">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="barsearch">
-          <button class="btn btn-outline-success" type="button" id="search">Search</button>
+          <button class="btn btn-success" type="button" id="search">Search</button>
         </form>
       </div>
     </div>
   </nav>
 
 
+  <div id="sild" style="background-color: cadetblue;">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators" style="padding-right: 0.25%;">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner" style="margin-bottom: 2%;">
+        <div class="img" style="width: 80%; padding-left: 20%;">
+        <div class="carousel-item active">
+          <img src="img/YC1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="text-align: center;">Yuru Camp△</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/VO1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Violet evergarden</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/AZ1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Aldnoah.ZERO</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/YU2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Kimi no nawa</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/HC2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>High school fleet</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/HW1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Hello world</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 
-
-<div id="Search">
-  <div class="album py-5 bg-light">
-    <div class="container">
+<div id="Search" style="background-color: cadetblue;">
+  <div class="album py-5">
+    <div class="container" style="padding-left: 80px;">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="output">
 
         
@@ -55,13 +108,10 @@
 
 
 
-
-
-<div id="Mylist">
-  <div class="album py-5 bg-light">
-    <div class="container">
+<div id="Mylist" style="background-color: cadetblue;">
+  <div class="album py-5">
+    <div class="container" style="padding-left: 80px;">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="outputlist">
-
 
     
 
@@ -71,11 +121,11 @@
 </div>
 
 
-<div id="detail">
-  <div class="album py-5 bg-light">
+<div id="detail" style="background-color: cadetblue;">
+  <div class="album py-5">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="outputlist">
-        <div class="card" style="width: 18rem;">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="outputlist" style="padding-left: 80px;">
+        <div class="card" style="width: 18rem; padding-bottom: 15px; padding-top: 15px;">
           <img id="image"  class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title" id="title">Card title</h5>
@@ -84,22 +134,26 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item" id="T">An item</li>
             <li class="list-group-item" id="E">A second item</li>
+            <li class="list-group-item" id="S">A second item</li>
             <li class="list-group-item" id="R">A third item</li>
+            <button type="button" class="btn btn-danger" id="close">ปิด</button>
           </ul>
-        
         </div>
-
-    
 
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
+<div class="Footer" id="footer" style="background-color: gray;">
+<div class="card pricing-header px-1 py-1 pt-md-2 pb-md-2 mx-auto text-center text-light" style="width: 18rem; background-color: gray; border: none;">
+  <img src="img/JH.png" class="card-img-top align-self-center" alt="..." style="width: 30%;">
+  <div class="card-body">
+    <p class="card-text">Supakorn Kantawong 632110353</p>
+    <p class="card-text">Call : 0906750969</p>
+  </div>
+</div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
